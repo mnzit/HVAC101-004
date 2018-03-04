@@ -1,0 +1,311 @@
+/*
+ Theme Name:   HVAC101 Child
+ Theme URI:    http://havenotmadewebsiteyet.com/
+ Description:  HVAC101 Child Theme
+ Author:       Augustine Harris
+ Author URI:   http://havenotmadewebsiteyet.com/
+ Template:     hvac101
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto:100,400,500,700,900');
+
+
+/*
+font-family: 'Anton', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+/* Our services */
+.our-service-layout-1 .card-area .card-image {
+    border: 15px solid #F5F5F5;
+    height: 150px;
+    width: 150px;
+    border-radius: 110px;
+    padding: 30px 8px 5px 5px;
+    margin:0 auto;
+}
+.our-service-layout-1 .card-area .card-image:hover{
+    background-color: #FF7800;
+    cursor: pointer;
+    
+}
+.our-service-layout-1 a:hover{
+    text-decoration: none;  
+}
+.our-service-layout-1 .card-area {
+    border-left:1px solid #E8E8E8;
+    border-radius:0;
+}
+.our-service-layout-1 {
+    border-right:1px solid #E8E8E8;
+}
+.our-service-layout-1 .card-area .card-body {
+    background-color: transparent;
+    color: black;
+}
+.our-service-layout-1 .card-area .card-body .card-text{
+    font-weight: 100;
+}
+/* About us */
+.container-fluid.about-layout-2.text_light{
+    position:relative;
+    z-index: 1;
+}
+.container-fluid.about-layout-2.text_light:after{
+    background:#267FAD;
+    position:absolute;
+    width:100%;
+    height: 100%;
+    content:" ";
+    top:0;
+    left:0;
+    z-index: 2;
+    opacity: 0.9;
+}
+.container-fluid.about-layout-2.text_light .container{
+    position: absolute;
+    top:0;
+    z-index: 3;
+    font-weight: 300;
+}
+.about-layout-2 .col-10.col-contents.about-us-content {
+    font-size: 36px;
+}
+.about-layout-2 .row .col-2 a {
+    border: 1px solid white;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-size: 21px;
+    font-weight: 300;
+}
+section.home-section.section-home-page-about.bg-primary-color{
+    padding:0;
+}
+/* Testimonials */
+.testimonials-layout-1 .des-image {
+    background: url(images/testimonials-1-bg.png) top center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: -30px
+}
+.testimonials-layout-1 .card {
+    color: black;
+}
+.testimonials-layout-1 .owl-carousel .owl-next,
+  .testimonials-layout-1 .owl-carousel .owl-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-75%);
+    padding: 10px;
+    
+  }
+  .testimonials-layout-1 .owl-carousel .owl-prev {
+    left: -80px;
+    color:black
+  }
+
+  .testimonials-layout-1 .owl-carousel .owl-next {
+    right: -80px;
+  }
+/* Services areas */
+.service-areas-layout-1 .border-dashed {
+    border: 1px dashed;
+    padding: 40px;
+}
+
+section.home-section.section-home-page-service-areas {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+section.home-section.section-home-page-service-areas:after{
+    background:rgba(255, 252, 252, 0.5);
+    position:absolute;
+    width:100%;
+    height: 100%;
+    content:" ";
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.service-areas-container.service-areas-layout-1 {
+    position: initial;
+}
+
+.section-home-page-service-areas .service-areas-layout-1 img.service-areas-bg{
+    z-index: -1;
+}
+
+  /* Navigation primary */
+  nav.main-menu .menu-item a {
+    color: #000000 !important;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.main-menu {
+    padding: 0;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.main-menu .active a{
+    border-bottom:3px solid #FF7902;
+    color:#FF7902 !important;
+}
+
+/* nav area header box buttons */
+
+.col.header-box.box-3
+ a {
+    border: 1px solid #CCCCCC;
+}
+.col.header-box a{
+    border-radius:0;
+}
+/* Top navigation*/
+.top-bar .social-links .fab {
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    padding: 9px 9px;
+    border-radius: 20px;
+    color: white;
+    background: black;
+}
+
+.top-bar {
+    color: black;
+    font-size: 0.8em;
+    padding: 8px;
+    border-bottom:1px solid #E1E1E1;
+}
+
+.top-bar-right i {
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.top-menu-wrapper a.nav-link {
+    color: #000 !important;
+    padding:0;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.top-menu-wrapper .menu-item a.nav-link{ border-right: 2px solid #000; line-height: 1; }
+
+.top-menu-wrapper ul#menu-primary-menu li:last-child a {
+    border: none;
+}
+
+/* Offers and promotions */
+section.home-section.section-home-page-promotions {
+    background-color: #F6F6F6;
+}
+
+
+.home-slider-item .owl-carousel-caption {
+    color: #fff;
+}
+
+.home-slider-item .owl-carousel-caption h1, .home-slider-item .owl-carousel-caption h2, .home-slider-item .owl-carousel-caption h3, .home-slider-item .owl-carousel-caption h4, .home-slider-item .owl-carousel-caption h5, .home-slider-item .owl-carousel-caption h6{
+    padding: 10px 0;
+    margin:0;
+}
+
+.home-slider-item .owl-carousel-caption h1{  
+    font-family: 'Anton', sans-serif;
+    font-size: 100px;
+    padding: 0;
+    margin:0;
+    color:#FF7901;
+}
+
+.home-slider-item .owl-carousel-caption h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color:#1171A7;
+}
+
+.home-slider-item .owl-carousel-caption h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color:black;
+}
+
+/*Home Page Troubleshooter*/
+section.home-section.section-home-page-troubleshooter:after{
+    background:rgba(255, 252, 252, 0.5);
+    position:absolute;
+    width:100%;
+    height: 100%;
+    content:" ";
+    top:0;
+    left:0;
+    z-index: -1;
+}
+a.troubleshooter-btn, .span-or {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #FFFFFF;
+    padding: 10px 20px;
+    margin: -3px;
+}
+
+.span-or {
+    background-color: #FF7800;
+    color:#fff;
+    border: 2px solid #FF7800;
+    margin:-3px;
+}
+
+section.home-section.section-home-page-troubleshooter .section_heading {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+section.home-section.section-home-page-troubleshooter h6 {
+    padding: 0;
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+
+/* footer-1 */
+.col-md.footer-1 {
+    text-align: center;
+    color:white;
+}
+.col-md.footer-1 .textwidget h1{
+    background-color:#FF7800;
+}
+.col-md.footer-1 .footer-widget-wrapper {
+    margin-top: 20px;
+}
+.col-md.footer-1 .footer-widget-wrapper img{
+    margin-top: 60px;
+}
+/* Extra Pages */
+section.home-section.section-home-page-extra-pages {
+    background: #F6F6F6;
+}
+
+
+/* Footer-1 social media*/
+.col-md.footer-1 .social-links .fab {
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    padding: 9px 9px;
+    color: white;
+}
