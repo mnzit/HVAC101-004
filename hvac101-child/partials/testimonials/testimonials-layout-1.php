@@ -23,6 +23,10 @@ $count=0;
         wp_reset_postdata();
         ?>
         </div>
+        <div class="owls-controls testimonials-control">
+            <div class="navi">
+            </div>
+        </div>
     </div>
 </div>
 <?php endif; ?>

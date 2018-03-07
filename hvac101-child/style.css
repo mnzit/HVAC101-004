@@ -40,10 +40,13 @@ h1,h2,h3,h4,h5,h6{
 .our-service-layout-1 a:hover{
     text-decoration: none;  
 }
-.our-service-layout-1 .card-area {
-    border-left:1px solid #E8E8E8;
-    border-radius:0;
+.d-flex.align-items-stretch.carder.col-sm {
+    border-left: 1px solid #EAEAEA;
 }
+.d-flex.align-items-stretch.carder.col-sm:last-child {
+    border-right: 1px solid #EAEAEA;
+}
+
 .our-service-layout-1 {
     border-right:1px solid #E8E8E8;
 }
@@ -81,7 +84,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .about-layout-2 .row .col-2 a {
     border: 1px solid white;
-    border-radius: 0;
+    /* border-radius: 0; */
     padding: 10px 20px;
     font-size: 21px;
     font-weight: 300;
@@ -99,22 +102,35 @@ section.home-section.section-home-page-about.bg-primary-color{
 .testimonials-layout-1 .card {
     color: black;
 }
-.testimonials-layout-1 .owl-carousel .owl-next,
-  .testimonials-layout-1 .owl-carousel .owl-prev {
+.testimonials-layout-1  .container{
+    position: relative;
+}
+.testimonials-layout-1 .owls-controls .navi {
+    text-align: none;
+}
+.testimonials-layout-1 .navi .owl-next,
+.testimonials-layout-1 .navi .owl-prev {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-75%);
-    padding: 10px;
-    
-  }
-  .testimonials-layout-1 .owl-carousel .owl-prev {
-    left: -80px;
-    color:black
+    z-index: 100;
+    height: 64px;
+    width: 64px;
+    border: 1px solid #D5D5D5;
+    border-radius: 94px;
+    color: #666666;
+}
+  .testimonials-layout-1 .navi .owl-prev{
+    left: -50px;
   }
 
-  .testimonials-layout-1 .owl-carousel .owl-next {
-    right: -80px;
+.testimonials-layout-1 .navi .owl-next {
+    right: -50px;
   }
+
 /* Services areas */
 .service-areas-layout-1 .border-dashed {
     border: 1px dashed;
@@ -154,11 +170,13 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.main-menu {
     padding: 0;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
 }
 nav.navbar.navbar-expand-lg.navbar-light.bg-light.main-menu .active a{
     border-bottom:3px solid #FF7902;
     color:#FF7902 !important;
 }
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.main-menu a.nav-link {padding-bottom: 2px;}
 
 /* nav area header box buttons */
 
@@ -167,7 +185,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.main-menu .active a{
     border: 1px solid #CCCCCC;
 }
 .col.header-box a{
-    border-radius:0;
+    /* border-radius:0; */
 }
 /* Top navigation*/
 .top-bar .social-links .fab {
@@ -206,6 +224,30 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.main-menu .active a{
 }
 
 /* Offers and promotions */
+
+/***
+## testimonials Layout 1 
+***/
+
+
+.testimonials-layout-1 .owl-carousel .owl-next,
+  .testimonials-layout-1 .owl-carousel .owl-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-75%);
+    padding: 10px;
+    
+  }
+
+
+  .testimonials-layout-1 .owl-carousel .owl-prev {
+    left: -80px;
+  }
+
+  .testimonials-layout-1 .owl-carousel .owl-next {
+    right: -80px;
+  }
+
 section.home-section.section-home-page-promotions {
     background-color: #F6F6F6;
 }
@@ -281,13 +323,23 @@ section.home-section.section-home-page-troubleshooter h6 {
     font-weight: 200;
 }
 
+/*Newsletter*/
+section.home-section.section-home-page-newsletter.text_light {
+    background: #565656;
+}
+section.home-section.section-home-page-newsletter.text_light .section_heading{
+    color:white;
+}
+
 /* footer-1 */
 .col-md.footer-1 {
     text-align: center;
     color:white;
 }
 .col-md.footer-1 .textwidget h1{
-    background-color:#FF7800;
+    background-color: #FF7800;
+    max-width: 485px;
+    margin: 0 auto;
 }
 .col-md.footer-1 .footer-widget-wrapper {
     margin-top: 20px;
@@ -309,3 +361,8 @@ section.home-section.section-home-page-extra-pages {
     padding: 9px 9px;
     color: white;
 }
+
+/* All buttons */
+.btn{
+    border-radius:0;
+} 
