@@ -284,15 +284,21 @@ section.home-section.section-home-page-promotions {
 }
 
 /*Home Page Troubleshooter*/
+section.home-section.section-home-page-troubleshooter {
+    background:url("/HVAC101-004/wordpress/wp-content/themes/hvac101-child/images/troubleshoot-image.png") top center no-repeat;
+    display:block;
+    z-index:1;
+    position:relative;
+}
 section.home-section.section-home-page-troubleshooter:after{
-    background:rgba(255, 252, 252, 0.5);
-    position:absolute;
-    width:100%;
-    height: 100%;
-    content:" ";
-    top:0;
-    left:0;
-    z-index: -1;
+background:rgba(25, 121, 175, 0.7);
+position:absolute;
+width:100%;
+height: 100%;
+content:" ";
+top:0;
+left:0;
+z-index:-1;
 }
 a.troubleshooter-btn, .span-or {
     color: #FFFFFF;
@@ -339,7 +345,7 @@ section.home-section.section-home-page-newsletter.text_light .section_heading{
 .col-md.footer-1 .textwidget h1{
     background-color: #FF7800;
     max-width: 485px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .col-md.footer-1 .footer-widget-wrapper {
     margin-top: 20px;
@@ -347,6 +353,26 @@ section.home-section.section-home-page-newsletter.text_light .section_heading{
 .col-md.footer-1 .footer-widget-wrapper img{
     margin-top: 60px;
 }
+
+footer#colophon {
+     background:url("/HVAC101-004/wordpress/wp-content/themes/hvac101-child/images/footer-1-image.png") top center no-repeat;
+    display:block;
+    z-index:1;
+    position:relative;
+}
+footer#colophon:after{
+    background:rgba(46, 46, 46, 0.9);
+position:absolute;
+width:100%;
+height: 100%;
+content:" ";
+top:0;
+left:0;
+z-index:-1;
+}
+
+
+
 /* Extra Pages */
 section.home-section.section-home-page-extra-pages {
     background: #F6F6F6;
@@ -366,3 +392,17 @@ section.home-section.section-home-page-extra-pages {
 .btn{
     border-radius:0;
 } 
+
+/*Responsive*/
+@media (max-width: 576px) {
+.service-areas-layout-1 ul.menu li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding:0;
+    padding-top: 5px;
+}
+.hvac101-footer .footer-widget-wrapper .textwidget h1{
+    font-size: 28px;
+} 
+}

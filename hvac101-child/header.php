@@ -27,7 +27,7 @@
 			<div class="container">
 				<div class="row">
 					<?php	if ( is_active_sidebar( 'top-bar-left' ) ):  ?>
-						<div class="col-3 top-bar-left">
+						<div class="col-md-8 top-bar-left">
 						<?php dynamic_sidebar( 'top-bar-left' ); ?>
 						</div>
 					<?php endif;?>

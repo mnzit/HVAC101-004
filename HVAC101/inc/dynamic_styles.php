@@ -69,7 +69,7 @@ function all_dynamic_css(){
 	
 
 	$custom_css.=".text_normal{ color: $text_normal; } ";
-	$custom_css.=".text_light{ color: $text_light !important; } ";
+	$custom_css.=".text_light{ color: $text_light; } ";
 
 	
 

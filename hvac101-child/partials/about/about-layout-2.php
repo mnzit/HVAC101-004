@@ -7,10 +7,10 @@ setup_postdata( $post );
 	<img src="<?php the_post_thumbnail_url();?>" alt="<?php the_title(); ?>">
 	<div class="container">
 		<div class="row">
-			<div class="col-10 col-contents about-us-content">
+			<div class="col-md-10 col-contents about-us-content">
 				<?php the_excerpt(); ?>
 			</div>
-			<div class="col-2">
+			<div class="col-md-2">
 			<a href="<?php the_permalink(); ?>" class="btn text-light">Contact Us</a>
 			</div>
 		</div>
